@@ -1,9 +1,4 @@
-/* 🌍 Global adjustments */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* 🌍 Global reset */
 body {
   margin: 0;
   padding: 0;
@@ -11,35 +6,123 @@ body {
   background-color: #f0f8ff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* 🖼 Hero section */
-.hero-text {
+#main-image h2 {
+  font-size: 6vw;
+  text-align: center;
+  padding: 2vh 4vw;
+}
+
+.button-1 {
+  display: inline-block;
+  font-size: 5vw;
+  padding: 1vh 3vw;
+  margin-top: 2vh;
+}
+
+/* 🧭 Steps section */
+#steps ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.step-block {
+  text-align: center;
+  padding: 2vh 4vw;
+}
+
+.step-block img {
+  width: 60px;
+  margin-bottom: 1vh;
+}
+
+.step-block h4 {
+  font-size: 5vw;
+}
+
+.step-block p {
+  font-size: 4vw;
+}
+
+/* 🗺 Possibilities section */
+#possibilities article {
+  margin-bottom: 3vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 3vh 4vw;
+  text-align: center;
+}
+
+.overlay h4 {
+  font-size: 5vw;
+}
+
+.overlay p {
+  font-size: 4vw;
+}
+
+.button-2 {
+  display: inline-block;
+  font-size: 4vw;
+  padding: 1vh 3vw;
+  margin-top: 2vh;
+}
+
+/* 📬 Contact section */
+#contact h3 {
+  font-size: 6vw;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#contact p {
+  font-size: 4vw;
+  padding: 2vh 4vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 2vh 4vw;
+}
+
+input[type="text"],
+input[type="submit"] {
+  font-size: 4vw;
+  padding: 1vh;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-3 {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+}
+
+/* 🧠 Footer */
+footer h1 {
   font-size: 5vw;
   text-align: center;
-  padding: 2vh 5vw;
 }
 
-/* 🧭 Icon section */
-.icon-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2vw;
-}
-
-/* 📱 Responsive tweaks */
-@media screen and (max-width: 600px) {
-  .hero-text {
-    font-size: 6vw;
-    padding: 3vh 4vw;
-  }
-
-  .icon-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .icon-section img {
-    width: 50px;
-    margin-bottom: 10px;
-  }
+footer .Copyright {
+  font-size: 3.5vw;
+  text-align: center;
+  padding: 2vh 4vw;
 }
